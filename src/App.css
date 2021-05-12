@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body{
+  font-family: Poppins;
+}
+.custom-container{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.75));
+  min-height: 100vh;
+}
+.App{
+  background-image: url(./img/cold.png);
+  background-size: cover;
+  background-position: bottom;
+  transform:  all ease 0.5s;
+  transition: all ease 0.5s;
+}
+.App.warm{
+  background-image: url(./img/warm.png);
+  transition: all ease 0.5s;
+}
+.search_box{
+  width: 100%;
+  margin:0 0 75px;
+}
+.search_box .search_bar{
+  display: block;
+  width: 100%;
+  padding: 25px;
+  appearance: none;
+  outline: none;
+  border: none;
+  background:none;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 0 0 15px 15px;
+  margin-top: -25px;
+  border-bottom: 6px solid #00000080;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bolder;
+  transition: all ease 0.3s;
+}
+.search_box .search_bar:focus{
+  background-color: rgba(255,255,255,0.8);
+  transition: all ease 0.3s;
+}
+.location_box .location{
+  color: #fff;
+  font-size: 49px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: rgba(50,50,70,0.5);
+}
+.location_box .date{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  font-style:italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50,50,70,0.5);
+}
+.weather_box{
+  text-align: center;
+}
+.weather_box .temp{
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  color: #fff;
+  font-size:100px;
+  text-align: center;
+  font-weight: bolder;
+  padding: 15px 25px;
+  text-shadow: 5px 5px rgba(50,50,70,0.5);
+}
+.weather_box .weather{
+  font-size:50px;
+  font-weight: bolder;
+  color: #fff;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
